@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>
+<body>
+
+    <!-- Header section with logo and ellipsis -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo">
+        </div>
+        <div class="ellipsis" onclick="toggleMenu()">&#8230;</div>
+    </header>
+
+    <!-- Button links -->
+    <section class="buttons-container">
+        <button onclick="window.location.href='https://rasin2006.github.io/animal/'">Animals</button>
+        <button onclick="window.location.href='https://rasin2006.github.io/fruit/'">Fruit</button>
+        <button onclick="window.location.href='https://rasin2006.github.io/feeling'">Feelings</button>
+        <button onclick="window.location.href='https://rasin2006.github.io/transportation/'">Transportations</button>
+    </section>
+
+    <!-- Hidden image popup (appears when the ellipsis is clicked) -->
+    <div class="image-popup" id="imagePopup">
+        <img src="qr.png" alt="Popup Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #077f7f, #dbf60af9);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Center logo at the top */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+}
+
+.logo img {
+    mix-blend-mode:difference;
+    filter: contrast(300%);
+    filter: brightness(100%);
+    width: 96px;
+    height: 96px;
+    /* opacity: 0.5 */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.ellipsis {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: -100px;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+/* Buttons styling */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.buttons-container button {
+    width: 110%;
+    padding: 15px;
+    border: none;
+    background-color: #1aa0e4d2;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.3s;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.buttons-container button:hover {
+    background-color: #81cd2a;
+}
+
+/* Popup image styling */
+.image-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.image-popup img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
